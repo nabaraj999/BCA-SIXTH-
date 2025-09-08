@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="Login">Enter your credential </string>
-    <string name="enter_email">Enter Your Email</string>
+
     <string name="enter_pass">Enter your Password</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="confirm_password">Confirm password</string>
 </resources>
