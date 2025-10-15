@@ -15,6 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
+    EditText etemail;
+    EditText etpassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
             return insets;
         });
         Button btnForgotPas = findViewById(R.id.btn_forgot);
-        EditText etemail = findViewById(R.id.et_email);
-        EditText etpassword = findViewById(R.id.et_password);
+        etemail = findViewById(R.id.et_email);
+        etpassword = findViewById(R.id.et_password);
 
         btnForgotPas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,14 +47,29 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLogicClick(View view) {
+        String email = etemail.getText().toString();
+        String pass = etpassword.getText().toString();
+
+        if (email.isEmpty()){
+            etemail.setError("This field is required");
+        }
+        if (pass.isEmpty()){
+            etpassword.setError("This field is required");
+        }
+
+        Log.e("Email tag",email);
+        Log.e("Password tag",pass);
+
         Toast.makeText(LoginActivity.this, "Hello I am Nabaraj", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
-        startActivity(intent); // Missing in your code
+       // startActivity(intent); // Missing in your code
+
+
     }
 
 
     public void onSignupClick(View view) {
         Intent intent = new Intent(LoginActivity.this, registerActivity.class);
-        startActivity(intent); // Missing in your code
+        startActivity(intent);
     }
 }

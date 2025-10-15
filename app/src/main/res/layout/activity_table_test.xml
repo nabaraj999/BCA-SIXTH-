@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableTestActivity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="S.No"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Full Name"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Address"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Phone"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Jana Bhawana Campus" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="Chapagaun" />
+
+        <TextView
+            android:padding="5dp"
+            android:text="9861404971" />
+
+    </TableRow>
+
+    <Button android:text="Login" />
+
+
+</TableLayout>

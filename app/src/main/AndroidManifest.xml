@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".result.back.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".result.back.ParentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TableTestActivity"
+            android:exported="true" />
+        <activity
             android:name=".registerActivity"
             android:exported="false" />
         <activity
@@ -29,6 +44,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Testforgot"
+            android:exported="false" />
     </application>
 
 </manifest>
