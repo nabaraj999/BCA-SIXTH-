@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".LoginBCAActivity"
+            android:exported="false" />
+        <activity
             android:name=".result.back.AddUserActivity"
             android:exported="false" />
         <activity
