@@ -45,11 +45,12 @@
             android:layout_marginBottom="16dp">
 
             <Button
+
                 android:id="@+id/button_google"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="👀  Google"
+                android:text="🌐  Google"
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
@@ -64,7 +65,7 @@
                 android:text="😁Facebook"
                 android:textSize="15sp"
                 android:textColor="@android:color/black"
-                android:backgroundTint="@android:color/transparent"
+                android:background="@drawable/bg_rounded_rect"
                 android:layout_marginStart="8dp" />
 
         </LinearLayout>
@@ -92,9 +93,10 @@
         <EditText
             android:id="@+id/editTextText2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:hint="📩 Enter your email"
             android:textColor="@android:color/black"
+            android:background="@drawable/bg_rounded_rect"
             android:inputType="textEmailAddress"
             android:layout_marginBottom="12dp" />
 
@@ -110,10 +112,11 @@
         <EditText
             android:id="@+id/editTextText3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:hint="🔑 Enter your password"
             android:textColor="@android:color/black"
             android:inputType="textPassword"
+            android:background="@drawable/bg_rounded_rect"
             android:layout_marginBottom="8dp" />
 
         <!-- Forgot Password -->
