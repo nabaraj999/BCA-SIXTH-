@@ -11,7 +11,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginBCAActivity extends AppCompatActivity {
 public boolean onCreateOptionMenu(Menu menu){
-    return super.onCreateOptionsMenu(menu);
+//    return super.onCreateOptionsMenu(menu);
+    getMenuInflater().inflate(R.menu.my_menu, menu);
+    return true;
 }
 
     @Override
