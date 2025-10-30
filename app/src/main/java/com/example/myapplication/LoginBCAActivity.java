@@ -2,8 +2,10 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -15,6 +17,17 @@ public boolean onCreateOptionMenu(Menu menu){
     getMenuInflater().inflate(R.menu.my_menu, menu);
     return true;
 }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if(itemId==R.id.menu_one){
+
+        } else if (itemId==R.id.menu_two) {
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
