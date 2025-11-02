@@ -41,7 +41,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 PopupMenu popup=new PopupMenu(DashboardActivity.this, view);
-                popup.getMenuInflater().inflate(R.menu.pop_menu, popup.getMenu());
+                popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
             }
 
         });
