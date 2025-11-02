@@ -60,8 +60,8 @@ public class LoginActivity extends AppCompatActivity {
         Log.e("Email tag",email);
         Log.e("Password tag",pass);
 
-        Toast.makeText(LoginActivity.this, "Hello I am Nabaraj", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+//        Toast.makeText(LoginActivity.this, "Hello I am Nabaraj", Toast.LENGTH_SHORT).show();
+//        Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
        // startActivity(intent); // Missing in your code
 
 

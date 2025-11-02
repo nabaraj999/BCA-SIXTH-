@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/context_menu_one"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/file"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/context_menu_two"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/about_us"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/context_menu_three"
+        android:title="@string/about_you"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/context_menu_four"
+        android:title="@string/setting" />
+</menu>
