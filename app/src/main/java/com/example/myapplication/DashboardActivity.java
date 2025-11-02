@@ -42,6 +42,20 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View view){
                 PopupMenu popup=new PopupMenu(DashboardActivity.this, view);
                 popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        int id = item.getItemId();
+                        if (id ==R.id.pop_one){
+                            Toast.makeText(DashboardActivity.this, "popup one", Toast.LENGTH_SHORT).show();
+                        }
+                        if (id == R.id.pop_two){
+                            Toast.makeText(DashboardActivity.this, "popup two", Toast.LENGTH_SHORT).show();
+                        }
+                        return false;
+                    }
+
+                });
             }
 
         });
