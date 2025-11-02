@@ -56,6 +56,7 @@ public class DashboardActivity extends AppCompatActivity {
                     }
 
                 });
+                popup.show();
             }
 
         });
