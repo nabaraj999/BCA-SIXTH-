@@ -30,6 +30,14 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         });
+
+        Button btnDialog = findViewById(R.id.btn_show_dialog);
+        btnDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // todo show defult dialog box here
+            }
+        });
         //Context Menu Start
         Button btnContext = findViewById(R.id.btn_context_menu);
         registerForContextMenu(btnContext);
