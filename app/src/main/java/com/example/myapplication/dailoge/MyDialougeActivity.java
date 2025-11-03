@@ -1,8 +1,10 @@
 package com.example.myapplication.dailoge;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
@@ -32,7 +34,16 @@ public class MyDialougeActivity extends AppCompatActivity {
                 // todo; write dialog box code here
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MyDialougeActivity.this);
                 dialog.setTitle("Hello it's me nabaraj");
-                dialog.setMessage("Aja hamro class ma tourist ako xa ");
+                dialog.setMessage("Aja hamro class ma tourist ako xa .....pani pareko bahana banayara aja samma ako theyana");
+                 dialog.setPositiveButton("Ho Tourist ako xa", new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialog, int which) {
+                         // todo : tourist lai wellcome garna lagau
+                         Toast.makeText(MyDialougeActivity.this, "Tourist nachyo", Toast.LENGTH_SHORT).show();
+                     }
+                 });
+                 dialog.setNegativeButton("Hawa Guff"),
+                         dialog.setNeutralButton("Khai tha xaina")
                 dialog.show();
             }
         });
