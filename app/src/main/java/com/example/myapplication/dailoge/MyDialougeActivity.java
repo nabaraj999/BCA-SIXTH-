@@ -33,17 +33,28 @@ public class MyDialougeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // todo; write dialog box code here
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MyDialougeActivity.this);
+                dialog.setCancelable(false);
                 dialog.setTitle("Hello it's me nabaraj");
                 dialog.setMessage("Aja hamro class ma tourist ako xa .....pani pareko bahana banayara aja samma ako theyana");
-                 dialog.setPositiveButton("Ho Tourist ako xa", new DialogInterface.OnClickListener() {
+                dialog.setPositiveButton("Ho Tourist ako xa", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // todo : tourist lai wellcome garna lagau
+                        Toast.makeText(MyDialougeActivity.this, "Tourist nachyo", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                 dialog.setNegativeButton("no", new DialogInterface.OnClickListener() {
                      @Override
                      public void onClick(DialogInterface dialog, int which) {
-                         // todo : tourist lai wellcome garna lagau
-                         Toast.makeText(MyDialougeActivity.this, "Tourist nachyo", Toast.LENGTH_SHORT).show();
+                         Toast.makeText(MyDialougeActivity.this, "no no no no", Toast.LENGTH_SHORT).show();
                      }
                  });
-                 dialog.setNegativeButton("Hawa Guff"),
-                         dialog.setNeutralButton("Khai tha xaina")
+                        dialog.setNeutralButton("Khai tha xaina", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(MyDialougeActivity.this, "Khai kai tha xaina malai", Toast.LENGTH_SHORT).show();
+                            }
+                        });
                 dialog.show();
             }
         });
