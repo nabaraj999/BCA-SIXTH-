@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -24,12 +25,16 @@ public class MyDialougeActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-       Button btnshowDialog=findViewById(R.id.btn_show_dialog);
-       btnshowDialog.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-
-           }
-       });
+        Button btnshowDialog = findViewById(R.id.btn_show_dialog);
+        btnshowDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // todo; write dialog box code here
+                AlertDialog.Builder dialog = new AlertDialog.Builder(MyDialougeActivity.this);
+                dialog.setTitle("Hello it's me nabaraj");
+                dialog.setMessage("Aja hamro class ma tourist ako xa ");
+                dialog.show();
+            }
+        });
     }
 }
