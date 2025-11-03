@@ -41,6 +41,7 @@ public class MyDialougeActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         // todo : tourist lai wellcome garna lagau
                         Toast.makeText(MyDialougeActivity.this, "Tourist nachyo", Toast.LENGTH_SHORT).show();
+                        dialog.cancel();
                     }
                 });
                  dialog.setNegativeButton("no", new DialogInterface.OnClickListener() {
