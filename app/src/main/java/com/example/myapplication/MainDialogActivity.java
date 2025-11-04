@@ -1,8 +1,10 @@
 package com.example.myapplication;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +28,30 @@ public class MainDialogActivity extends AppCompatActivity {
         btnshowmydialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Dialog meroDialog = new Dialog(MainDialogActivity.this);
+                meroDialog.setContentView(R.layout.activity_my_dialouge);
+
+                //start refrencing views
+                Button btnLike = meroDialog.findViewById(R.id.btn_like);
+                Button btnDislike = meroDialog.findViewById(R.id.btn_dislike);
+
+                btnLike.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainDialogActivity.this, "Jau Nata", Toast.LENGTH_SHORT).show();
+                        meroDialog.dismiss();
+                    }
+                });
+
+                btnDislike.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainDialogActivity.this, "Alxi raixas ta", Toast.LENGTH_SHORT).show();
+                        meroDialog.dismiss();
+                    }
+                });
+
+                meroDialog.show();
 
             }
         });
