@@ -8,13 +8,56 @@
     android:layout_height="match_parent"
     tools:context=".dailoge.MyDialougeActivity">
 
-    <Button
-        android:id="@+id/btn_show_dialog"
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="VISIT NEPAL 2025"
+      android:textSize="22dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:layout_marginTop="50dp"
+      />
+
+    <TextView
         android:layout_width="wrap_content"
-        android:text="Defult dialog"
+        android:layout_height="wrap_content"
+        android:text="Are you gonna visit this year ?"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:gravity="center"
         android:layout_gravity="center"
-        android:layout_marginTop="100px"
-        android:layout_height="wrap_content"/>
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/sheep"
+      android:layout_gravity="center"
+      />
+  <RelativeLayout
+      android:layout_width="300dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="50dp">
+
+    <Button
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Yes"/>
+
+    <Button
+        android:id="@+id/btn_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="No"/>
+  </RelativeLayout>
+
 
 </LinearLayout>
