@@ -22,8 +22,8 @@ public class MyAdapterActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-       Spinner comboBox = findViewById(R.id.spin);
-        ArrayAdapter.
+        Spinner comboBox = findViewById(R.id.spin);
+        ArrayAdapter.createFromResource(this, R.array.days, android.R.layout.simple_list_item_1);
 
     }
 }
