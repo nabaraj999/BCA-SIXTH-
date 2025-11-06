@@ -1,8 +1,11 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,5 +30,17 @@ public class MyAdapterActivity extends AppCompatActivity {
        adapter.setDropDownViewResource(R.layout.row_spin);
         comboBox.setAdapter(adapter);
 
+        comboBox.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                int selectedPoistion = position;
+                Toast.makeText(MyAdapterActivity.this, "I am at position "+selectedPoistion, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 }
