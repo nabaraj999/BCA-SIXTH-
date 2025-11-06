@@ -6,4 +6,14 @@
     <string name="enter_email">Enter your email</string>
     <string name="enter_password">Enter your password</string>
     <string name="confirm_password">Confirm password</string>
+
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
 </resources>
