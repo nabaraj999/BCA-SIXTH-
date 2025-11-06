@@ -24,6 +24,7 @@ public class MyAdapterActivity extends AppCompatActivity {
         });
         Spinner comboBox = findViewById(R.id.spin);
        ArrayAdapter<CharSequence> adapter=  ArrayAdapter.createFromResource(this, R.array.days, android.R.layout.simple_list_item_1);
+       adapter.setDropDownViewResource(R.layout.row_spin);
         comboBox.setAdapter(adapter);
 
     }

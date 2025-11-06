@@ -2,10 +2,11 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="15dp"
-    android:text="Hello"
-    android:textColor="@android:color/darker_gray"
+    android:textColor="@android:color/holo_blue_light"
     android:textSize="20sp"
-    android:textStyle="bold">
+    android:textStyle="bold"
+    tools:text="Hello">
 
 </TextView>
