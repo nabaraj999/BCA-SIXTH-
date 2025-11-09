@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MyListMainActivity extends AppCompatActivity {
 
 
-    String alpha[] = {"A","B","C","D","E","F","G","H","I","J","K"};
+    String alpha[] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +25,11 @@ public class MyListMainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        new ArrayAdapter<>(this, R.layout.row_list_item);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.row_list_item, R.id.title_nabu, alpha);
 
+
+        ListView list = findViewById(R.id.list_view);
+
+        list.setAdapter(adapter);
     }
 }
