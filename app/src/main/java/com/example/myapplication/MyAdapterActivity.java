@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MyAdapterActivity extends AppCompatActivity {
-
+ String[] days = {"Sunday","Monday","Tuesday","Wednesday", "Thurday", "Friday","Sturday"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +26,15 @@ public class MyAdapterActivity extends AppCompatActivity {
             return insets;
         });
         Spinner comboBox = findViewById(R.id.spin);
-       ArrayAdapter<CharSequence> adapter=  ArrayAdapter.createFromResource(this, R.array.days, android.R.layout.simple_list_item_1);
-       adapter.setDropDownViewResource(R.layout.row_spin);
+//       ArrayAdapter<CharSequence> adapter=  ArrayAdapter.createFromResource(this, R.array.days, android.R.layout.simple_list_item_1);
+//       adapter.setDropDownViewResource(R.layout.row_spin);
+//        comboBox.setAdapter(adapter);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>
+                (this,android.R.layout.simple_list_item_1,days);
+        adapter.setDropDownViewResource(R.layout.row_spin);
         comboBox.setAdapter(adapter);
+
 
         comboBox.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
