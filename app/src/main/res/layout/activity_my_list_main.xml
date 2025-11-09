@@ -9,6 +9,8 @@
     tools:context=".MyListMainActivity">
 
     <ListView
-        android:layout_width=""
-        android:layout_height="" />
+        android:id="@+id/list_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
