@@ -148,7 +148,8 @@
             android:layout_height="wrap_content"
             android:text="   +   "
             android:textColor="@android:color/white"
-            android:textSize="75sp"
+            android:textSize="55sp"
+            android:padding="6dp"
             android:background="@drawable/nonborder"
             android:backgroundTint="#FF69B4"
             android:gravity="center"/>
@@ -163,6 +164,45 @@
             android:textSize="16sp"
             android:layout_marginLeft="30dp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   T   "
+            android:layout_toRightOf="@id/plus"
+            android:textSize="55sp"
+            android:background="@drawable/nonborder"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="5dp"
+            android:padding="6dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/plus"
+            android:layout_marginLeft="50dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+
+            android:text="Transfer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/t"
+            android:text=" :: "
+            android:padding="5dp"
+            android:background="@drawable/nonborder"
+            android:textSize="60dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
     </RelativeLayout>
 
 
