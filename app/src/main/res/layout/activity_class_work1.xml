@@ -1,90 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#F8EAF6"
+    android:orientation="vertical"
     tools:context=".ClassWork1Activity">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
         <ImageView
             android:id="@+id/profileImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/picofme"
             android:layout_alignParentStart="true"
-            android:contentDescription="Profile image"
             android:background="@drawable/rounded_border"
-            android:padding="5dp" />
-
+            android:padding="5dp"
+            android:src="@drawable/picofme"
+            android:contentDescription="Profile image" />
 
         <TextView
             android:id="@+id/greetingText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello, Nabaraj"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:layout_toEndOf="@id/profileImage"
-            android:layout_marginStart="10dp" />
+            android:layout_marginStart="10dp"
+            android:text="Hello, Nabaraj"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <!-- Welcome Message -->
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to your Wallet"
-            android:textColor="@color/black"
-            android:textSize="14sp"
             android:layout_below="@id/greetingText"
             android:layout_alignStart="@id/greetingText"
-            android:layout_marginTop="5dp" />
-
+            android:layout_marginTop="5dp"
+            android:text="Welcome to your Wallet"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/notificationIcon"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="0dp"
             android:background="@drawable/notification"
-            android:contentDescription="Notification icon"
             android:padding="6dp"
-            android:src="@drawable/notification_icon" />
-
+            android:src="@drawable/notification_icon"
+            android:contentDescription="Notification icon" />
     </RelativeLayout>
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:padding="15dp"
-
-        android:background="@drawable/nonborder">
+        android:layout_margin="20dp"
+        android:background="@drawable/nonborder"
+        android:padding="15dp">
 
         <TextView
             android:id="@+id/currencyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
             android:background="@drawable/bg_rounded_rect"
             android:padding="5dp"
             android:text="USD"
-            android:textColor="@color/black"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <TextView
@@ -92,13 +82,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/currencyText"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="-25dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-28dp"
             android:background="@drawable/bg_rounded_rect"
             android:gravity="center"
             android:padding="5dp"
             android:text="**** 5462, Exp 08/26"
-            android:textColor="@color/black"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <ImageView
@@ -107,38 +97,35 @@
             android:layout_height="50dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="37dp"
-            android:contentDescription="Visa Logo"
-            android:src="@drawable/visa" />
+            android:src="@drawable/visa"
+            android:contentDescription="Visa Logo" />
 
         <TextView
             android:id="@+id/your_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Balance "
+            android:layout_below="@id/visaLogo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Your Balance"
             android:textColor="#CCCCCC"
-            android:textStyle="bold"
-            android:layout_below="@+id/visaLogo"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="10dp"
-            android:textSize="19dp"/>
+            android:textSize="19sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/your_balance"
+            android:layout_marginStart="10dp"
             android:text="$3,200.00"
-            android:layout_below="@+id/your_balance"
-            android:layout_marginLeft="10dp"
-            android:textSize="50dp"
-            android:textColor="@color/black"
-
+            android:textColor="@android:color/black"
+            android:textSize="50sp" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
         android:padding="15dp">
 
 
@@ -146,65 +133,143 @@
             android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   +   "
-            android:textColor="@android:color/white"
-            android:textSize="55sp"
-            android:padding="6dp"
             android:background="@drawable/nonborder"
             android:backgroundTint="#FF69B4"
-            android:gravity="center"/>
-
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="   +   "
+            android:textColor="@android:color/white"
+            android:textSize="55sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/plus"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="8dp"
             android:text="Add Money"
+            android:textColor="@color/black"
             android:textSize="16sp"
-            android:layout_marginLeft="30dp"
             android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/t"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   T   "
-            android:layout_toRightOf="@id/plus"
-            android:textSize="55sp"
+            android:layout_toEndOf="@id/plus"
             android:background="@drawable/nonborder"
-            android:backgroundTint="@color/white"
-            android:layout_marginLeft="5dp"
             android:padding="6dp"
-            android:textColor="@color/black"/>
+            android:text="   T   "
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="55sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/t"
-            android:layout_marginTop="7dp"
-            android:layout_toRightOf="@id/plus"
-            android:layout_marginLeft="50dp"
-            android:textSize="16dp"
-            android:textStyle="bold"
-
-            android:text="Transfer" />
+            android:layout_below="@id/t"
+            android:layout_toEndOf="@id/plus"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Transfer"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/das"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/t"
-            android:text=" :: "
-            android:padding="5dp"
+            android:layout_toEndOf="@id/t"
             android:background="@drawable/nonborder"
-            android:textSize="60dp"
-            android:layout_marginLeft="10dp"/>
+            android:padding="6dp"
+            android:text=" ::  "
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="55sp" />
 
-
-
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t"
+            android:layout_toEndOf="@id/plus"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Transfer"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Recent recipients"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/nabu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/picofme" />
+
+        <ImageView
+            android:id="@+id/nabu2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@id/nabu"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/picofme" />
+
+        <ImageView
+            android:id="@+id/nabu3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@id/nabu2"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/picofme" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@id/nabu3"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/picofme" />
+    </RelativeLayout>
+
+    <!-- Transaction Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="View all >"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 </LinearLayout>
