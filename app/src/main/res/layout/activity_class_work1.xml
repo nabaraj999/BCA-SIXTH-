@@ -9,6 +9,7 @@
     android:background="#F8EAF6"
     tools:context=".ClassWork1Activity">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -16,7 +17,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
 
-        <!-- Profile Picture -->
+
         <ImageView
             android:id="@+id/profileImage"
             android:layout_width="50dp"
@@ -27,7 +28,7 @@
             android:background="@drawable/rounded_border"
             android:padding="5dp" />
 
-        <!-- Greeting -->
+
         <TextView
             android:id="@+id/greetingText"
             android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
             android:layout_alignStart="@id/greetingText"
             android:layout_marginTop="5dp" />
 
-        <!-- Notification Icon -->
+
         <ImageView
             android:id="@+id/notificationIcon"
             android:layout_width="45dp"
@@ -65,35 +66,105 @@
 
     </RelativeLayout>
 
+
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" USD "
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:background="@drawable/bg_rounded_rect"
-        android:padding="5dp"/>
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="**** 5462, Exp 08/26"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="16dp"
-        android:background="@drawable/bg_rounded_rect"
-        android:padding="5dp"/>
+        android:background="@drawable/nonborder">
 
-    <ImageView
+        <TextView
+            android:id="@+id/currencyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_rect"
+            android:padding="5dp"
+            android:text="USD"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cardInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currencyText"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/bg_rounded_rect"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="**** 5462, Exp 08/26"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/visaLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="37dp"
+            android:contentDescription="Visa Logo"
+            android:src="@drawable/visa" />
+
+        <TextView
+            android:id="@+id/your_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Balance "
+            android:textColor="#CCCCCC"
+            android:textStyle="bold"
+            android:layout_below="@+id/visaLogo"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$3,200.00"
+            android:layout_below="@+id/your_balance"
+            android:layout_marginLeft="10dp"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   +   "
+            android:textColor="@android:color/white"
+            android:textSize="75sp"
+            android:background="@drawable/nonborder"
+            android:backgroundTint="#FF69B4"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plus"
+            android:layout_marginTop="8dp"
+            android:text="Add Money"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
 
 
 </LinearLayout>
