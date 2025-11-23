@@ -8,6 +8,7 @@
     tools:context=".MyCustomizedListActivity">
 
     <ListView
+        tools:listitem="@layout/my_list_row"
         android:id="@+id/mero_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

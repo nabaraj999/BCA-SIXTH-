@@ -9,7 +9,7 @@
         android:id="@+id/myImg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/visa" />
+        android:src="@drawable/picofme" />
 
     <TextView
         android:id="@+id/my_title"
