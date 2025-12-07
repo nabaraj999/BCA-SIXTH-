@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -37,14 +38,17 @@ int[] images = {R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.user,
 
 class MeroCustomAdapter extends BaseAdapter{
 
+    MeroCustomAdapter(context c){
+        this.context = c;
+    }
     @Override
     public int getCount() {
-        return 0;
+        return name.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return images[i];
     }
 
     @Override
@@ -53,7 +57,13 @@ class MeroCustomAdapter extends BaseAdapter{
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View view, ViewGroup parent) {
+        if(view==null) {
+            view = LayoutInflater.from(context).inflate(R.layout.row_new_list, parent, false);
+            Image myImage=view.findViewById(R.id.img);
+            TextView myName = view.findViewById(R.id.tv_name);
+            TextView myNickName = view.findViewById(R.id.tv_nick);
+        }
         return null;
     }
 }
