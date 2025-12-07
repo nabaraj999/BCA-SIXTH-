@@ -9,8 +9,16 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MeroCustomListActivity extends AppCompatActivity {
-String [] name= {"Abhash","Anjali", "Bimal", "Dipen", "Jpyesh", "Mallika", "Manisha", "Nabaraj", "Nayan", "Pratiksha", "Rashmi", "Ritika", };
-String [] nickname ={"Hallakumar","HAsmati","silent", "chasmiss", "joker", "Fat", "Small", "loverBoy", "Mote", "Gayab", "Danger", "Dancer", "Don"}
+String [] name= {"Abhash","Anjali", "Bimal", "Dipen", "Joyesh", "Mallika", "Manisha","Manjit", "Nabaraj",
+        "Nayan", "Pratiksha", "Rashmi", "Ritika","Sangam","Sebak", "Srijana","Sudip","Sushil",
+        "Swostika" };
+String [] nickname ={"Hallakumar","HAsmati","silent", "chasmiss", "joker", "Fat", "Small",
+        "loverBoy", "Mote", "Gayab", "Danger", "Dancer", "Don", "Chattu","Neta", "Boxer",
+        "Lamo Kapal Boy", "Commando", "Presenter"};
+int[] images = {R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.user,
+        R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.picofme,R.drawable.user,
+        R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.user,
+        R.drawable.user,R.drawable.user,R.drawable.user,R.drawable.user,};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
