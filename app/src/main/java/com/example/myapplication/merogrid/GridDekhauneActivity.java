@@ -1,10 +1,12 @@
 package com.example.myapplication.merogrid;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,9 +30,11 @@ public class GridDekhauneActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        GridView maingrid=findViewById(R.id.main_grid);
     }
 }
 class GridKoAdapter extends BaseAdapter{
+    private final Context myContext;
     String[] name = {"Abhash", "Anjali", "Bimal", "Dipen", "Joyesh",
             "Mallika", "Manisa", "Manjit", "Nabaraj", "Nayan",
             "Nirjala", "Pratiksha", "Rashmi", "Ritika", "Sangam",
@@ -49,7 +53,10 @@ class GridKoAdapter extends BaseAdapter{
             R.drawable.picofme, R.drawable.picofme, R.drawable.picofme,
             R.drawable.picofme, R.drawable.picofme, R.drawable.picofme, R.drawable.picofme,
     };
-
+    
+GridKoAdapter(Context context){
+   myContext = context;
+}
 
     @Override
     public int getCount() {
@@ -68,7 +75,7 @@ class GridKoAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = LayoutInflater.from().inflate(R.layout.grid_ko_design,parent,false);
+        convertView = LayoutInflater.from(myContext).inflate(R.layout.grid_ko_design,parent,false);
         ImageView img = convertView.findViewById(R.id.grid_image);
         TextView Tvname = convertView.findViewById(R.id.grid_name);
         TextView Tvnickname = convertView.findViewById(R.id.grid_nickname);

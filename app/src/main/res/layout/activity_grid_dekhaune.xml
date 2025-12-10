@@ -8,6 +8,7 @@
     tools:context=".merogrid.GridDekhauneActivity">
 
     <GridView
+        android:id="@+id/main_grid"
         android:numColumns="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
