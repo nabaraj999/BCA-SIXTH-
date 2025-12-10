@@ -31,6 +31,8 @@ public class GridDekhauneActivity extends AppCompatActivity {
             return insets;
         });
         GridView maingrid=findViewById(R.id.main_grid);
+       GridKoAdapter adapter = new GridKoAdapter(GridDekhauneActivity.this);
+        maingrid.setAdapter(adapter);
     }
 }
 class GridKoAdapter extends BaseAdapter{
