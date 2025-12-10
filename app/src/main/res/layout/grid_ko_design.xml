@@ -6,13 +6,21 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
+        android:id="@+id/grid_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/picofme"
         android:scaleType="centerCrop"/>
 
     <TextView
+        android:id="@+id/grid_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Naam Lekhne thau"/>
+
+    <TextView
+        android:id="@+id/grid_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="NickName Lekhne thau"/>
 </LinearLayout>

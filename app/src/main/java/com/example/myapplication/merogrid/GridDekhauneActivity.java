@@ -1,9 +1,12 @@
 package com.example.myapplication.merogrid;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,12 +53,12 @@ class GridKoAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return 0;
+       return images.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return images[position];
     }
 
     @Override
@@ -65,6 +68,16 @@ class GridKoAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        convertView = LayoutInflater.from().inflate(R.layout.grid_ko_design,parent,false);
+        ImageView img = convertView.findViewById(R.id.grid_image);
+        TextView Tvname = convertView.findViewById(R.id.grid_name);
+        TextView Tvnickname = convertView.findViewById(R.id.grid_nickname);
+
+        // abo ya nira data halne kaam garam
+        img.setImageResource(images[position]);
+        Tvname.setText(name[position]);
+        Tvnickname.setText(nickName[position]);
+
+        return convertView;
     }
 }
