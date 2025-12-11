@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".DemoRecycleActivity"
+            android:exported="false" />
+        <activity
             android:name=".merogrid.GridDekhauneActivity"
             android:exported="false" />
         <activity

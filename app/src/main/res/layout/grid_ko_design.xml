@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    android:elevation="6dp"
+    android:padding="12dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <ImageView
-        android:id="@+id/grid_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/picofme"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:id="@+id/grid_name"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="187dp"
         android:layout_height="wrap_content"
-        tools:text="Naam Lekhne thau"/>
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="8dp">
 
-    <TextView
-        android:id="@+id/grid_nickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="NickName Lekhne thau"/>
-</LinearLayout>
-    </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/grid_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_image_bg"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picofme" />
+
+        <TextView
+            android:id="@+id/grid_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Naam Lekhne Thau" />
+
+        <TextView
+            android:id="@+id/grid_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            tools:text="NickName Lekhne Thau" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
