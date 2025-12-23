@@ -5,49 +5,49 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="30dp"
     android:orientation="vertical"
-    tools:context="db.UiActivity">
+    tools:context="db.UiActivity"
+    android:layout_margin="30dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Database Demo"
+        android:textStyle="bold"
+        android:textSize="30dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:text="Database Demo"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textColor="@color/black"/>
 
     <TextView
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name:"
-        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
 
     <EditText
+        android:layout_marginBottom="20dp"
         android:id="@+id/db_name"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
         android:hint="Enter Your Name Here" />
 
 
     <TextView
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Address:"
-        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
 
     <EditText
+        android:layout_marginBottom="20dp"
         android:id="@+id/db_address"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
         android:hint="Enter Your Address Here" />
 
     <TextView
@@ -58,57 +58,57 @@
         android:textStyle="bold" />
 
     <EditText
+        android:layout_marginBottom="30dp"
         android:id="@+id/db_contact"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="30dp"
         android:hint="Enter Your Contact Here" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <Button
 
             android:id="@+id/btn_add"
+            android:backgroundTint="#FF801F"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:backgroundTint="#FF801F"
-            android:text="Add" />
+            android:text="Add"
+            android:layout_marginRight="8dp"/>
 
         <Button
             android:id="@+id/btn_update"
+            android:backgroundTint="@android:color/black"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:backgroundTint="@android:color/black"
-            android:text="Update" />
+            android:text="Update"
+            android:layout_marginLeft="8dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <Button
             android:id="@+id/btn_view"
+            android:backgroundTint="#FF1F9E"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:backgroundTint="#FF1F9E"
-            android:text="View" />
+            android:text="View"
+            android:layout_marginRight="8dp"/>
 
         <Button
             android:id="@+id/btn_delete"
+            android:backgroundTint="#FF1F2E"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:backgroundTint="#FF1F2E"
-            android:text="Delete" />
+            android:text="Delete"
+            android:layout_marginLeft="8dp"/>
     </LinearLayout>
 
 
