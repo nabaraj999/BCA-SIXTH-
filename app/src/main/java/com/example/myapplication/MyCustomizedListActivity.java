@@ -26,7 +26,7 @@ public class MyCustomizedListActivity extends AppCompatActivity {
         });
 
         ListView list=findViewById(R.id.mero_list);
-        meroList.setAdapater();
+        //meroList.setAdapater();
     }
 }
 class MeroCoutomAdapter extends BaseAdapter {

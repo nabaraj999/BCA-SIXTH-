@@ -71,7 +71,6 @@
         android:layout_gravity="center">
 
         <Button
-
             android:id="@+id/btn_add"
             android:backgroundTint="#FF801F"
             android:layout_width="150dp"
@@ -85,6 +84,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Update"
+            android:textColor="@color/white"
             android:layout_marginLeft="8dp"/>
     </LinearLayout>
 
